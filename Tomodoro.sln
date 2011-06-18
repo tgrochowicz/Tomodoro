@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tomodoro", "Tomodoro\Tomodoro.csproj", "{F38DC1C7-6CE1-4AA8-ACD4-CA3B31FE0CE2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tomodoro", "Tomodoro\Tomodoro.csproj", "{E1123A0D-0523-49B5-BD12-2AC6CB6CF79C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F38DC1C7-6CE1-4AA8-ACD4-CA3B31FE0CE2}.Debug|x86.ActiveCfg = Debug|x86
-		{F38DC1C7-6CE1-4AA8-ACD4-CA3B31FE0CE2}.Debug|x86.Build.0 = Debug|x86
-		{F38DC1C7-6CE1-4AA8-ACD4-CA3B31FE0CE2}.Release|x86.ActiveCfg = Release|x86
-		{F38DC1C7-6CE1-4AA8-ACD4-CA3B31FE0CE2}.Release|x86.Build.0 = Release|x86
+		{E1123A0D-0523-49B5-BD12-2AC6CB6CF79C}.Debug|x86.ActiveCfg = Debug|x86
+		{E1123A0D-0523-49B5-BD12-2AC6CB6CF79C}.Debug|x86.Build.0 = Debug|x86
+		{E1123A0D-0523-49B5-BD12-2AC6CB6CF79C}.Release|x86.ActiveCfg = Release|x86
+		{E1123A0D-0523-49B5-BD12-2AC6CB6CF79C}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
