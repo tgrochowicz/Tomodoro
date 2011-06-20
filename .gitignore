@@ -1,6 +1,4 @@
-
-<!-- saved from url=(0086)https://raw.github.com/gist/802380/4fc38750f7acaa19063c6dd5663f86ed755ea111/.gitignore -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">bin/
+bin/
 obj/
 *.cache
 *.pdb
@@ -11,4 +9,4 @@ obj/
 *.exe
 *.msi
 *.Cache
-TestResults/*</pre></body></html>
+TestResults/*
