@@ -98,7 +98,7 @@ namespace Tomodoro.Timer
         private TomodoroState CurrentState;
 
         //60,000 milliseconds per minute
-        private const int MinuteInterval = 600000;
+        private const int MinuteInterval = 60000;
 
         //work interval of 25 minutes
         private const int MinutesWorking = 25;
