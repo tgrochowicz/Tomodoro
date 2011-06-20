@@ -28,77 +28,153 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tomodoro));
+            this.clbGoals = new System.Windows.Forms.CheckedListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtGoal = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtNotes = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.clbTomodori = new System.Windows.Forms.CheckedListBox();
+            this.txtTitle = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lblTimeRemaining = new System.Windows.Forms.Label();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnStop = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
+            this.lblStatus = new System.Windows.Forms.Label();
+            this.clndrBrowser = new System.Windows.Forms.MonthCalendar();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnDeleteTomodori = new System.Windows.Forms.Button();
+            this.btnUpdateTomodori = new System.Windows.Forms.Button();
+            this.btnAddTomodori = new System.Windows.Forms.Button();
+            this.btnDeleteGoal = new System.Windows.Forms.Button();
+            this.btnUpdateGoal = new System.Windows.Forms.Button();
+            this.btnAddGoal = new System.Windows.Forms.Button();
+            this.btnClearTomodori = new System.Windows.Forms.Button();
+            this.btnClearGoal = new System.Windows.Forms.Button();
+            this.notificationIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // checkedListBox1
+            // clbGoals
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(6, 19);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(350, 94);
-            this.checkedListBox1.TabIndex = 0;
+            this.clbGoals.FormattingEnabled = true;
+            this.clbGoals.Location = new System.Drawing.Point(6, 19);
+            this.clbGoals.Name = "clbGoals";
+            this.clbGoals.Size = new System.Drawing.Size(617, 94);
+            this.clbGoals.TabIndex = 0;
+            this.clbGoals.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.clbGoals_ItemCheck);
+            this.clbGoals.SelectedIndexChanged += new System.EventHandler(this.clbGoals_SelectedIndexChanged);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.checkedListBox1);
+            this.groupBox1.Controls.Add(this.btnClearGoal);
+            this.groupBox1.Controls.Add(this.btnDeleteGoal);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.btnUpdateGoal);
+            this.groupBox1.Controls.Add(this.txtGoal);
+            this.groupBox1.Controls.Add(this.btnAddGoal);
+            this.groupBox1.Controls.Add(this.clbGoals);
             this.groupBox1.Location = new System.Drawing.Point(302, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(362, 190);
+            this.groupBox1.Size = new System.Drawing.Size(629, 190);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Today\'s Goals";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 122);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(32, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Goal:";
+            // 
+            // txtGoal
+            // 
+            this.txtGoal.Location = new System.Drawing.Point(44, 119);
+            this.txtGoal.Name = "txtGoal";
+            this.txtGoal.Size = new System.Drawing.Size(548, 20);
+            this.txtGoal.TabIndex = 10;
+            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.btnClearTomodori);
+            this.groupBox2.Controls.Add(this.btnDeleteTomodori);
+            this.groupBox2.Controls.Add(this.btnUpdateTomodori);
+            this.groupBox2.Controls.Add(this.txtNotes);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.checkedListBox2);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.clbTomodori);
+            this.groupBox2.Controls.Add(this.txtTitle);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Location = new System.Drawing.Point(12, 204);
+            this.groupBox2.Controls.Add(this.btnAddTomodori);
+            this.groupBox2.Location = new System.Drawing.Point(302, 208);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(919, 252);
+            this.groupBox2.Size = new System.Drawing.Size(629, 252);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Work Units";
+            this.groupBox2.Text = "Tomodori";
+            // 
+            // txtNotes
+            // 
+            this.txtNotes.Location = new System.Drawing.Point(272, 44);
+            this.txtNotes.Multiline = true;
+            this.txtNotes.Name = "txtNotes";
+            this.txtNotes.Size = new System.Drawing.Size(335, 202);
+            this.txtNotes.TabIndex = 13;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(228, 128);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(38, 13);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Notes:";
+            // 
+            // clbTomodori
+            // 
+            this.clbTomodori.FormattingEnabled = true;
+            this.clbTomodori.Location = new System.Drawing.Point(6, 19);
+            this.clbTomodori.Name = "clbTomodori";
+            this.clbTomodori.Size = new System.Drawing.Size(193, 229);
+            this.clbTomodori.TabIndex = 11;
+            this.clbTomodori.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.clbTomodori_ItemCheck);
+            this.clbTomodori.SelectedIndexChanged += new System.EventHandler(this.clbTomodori_SelectedIndexChanged);
+            // 
+            // txtTitle
+            // 
+            this.txtTitle.Location = new System.Drawing.Point(351, 18);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(213, 20);
+            this.txtTitle.TabIndex = 10;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(306, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Topic:";
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.button6);
-            this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Controls.Add(this.button2);
-            this.groupBox3.Controls.Add(this.label1);
+            this.groupBox3.Controls.Add(this.lblTimeRemaining);
+            this.groupBox3.Controls.Add(this.btnReset);
+            this.groupBox3.Controls.Add(this.btnStop);
+            this.groupBox3.Controls.Add(this.btnStart);
+            this.groupBox3.Controls.Add(this.lblStatus);
             this.groupBox3.Controls.Add(this.pictureBox1);
             this.groupBox3.Location = new System.Drawing.Point(12, 12);
             this.groupBox3.Name = "groupBox3";
@@ -107,25 +183,77 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Current Status";
             // 
-            // button4
+            // lblTimeRemaining
             // 
-            this.button4.BackgroundImage = global::Tomodoro.Properties.Resources.Plus;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.Location = new System.Drawing.Point(83, 191);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(55, 55);
-            this.button4.TabIndex = 7;
-            this.button4.UseVisualStyleBackColor = true;
+            this.lblTimeRemaining.AutoSize = true;
+            this.lblTimeRemaining.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimeRemaining.Location = new System.Drawing.Point(58, 19);
+            this.lblTimeRemaining.Name = "lblTimeRemaining";
+            this.lblTimeRemaining.Size = new System.Drawing.Size(175, 25);
+            this.lblTimeRemaining.TabIndex = 9;
+            this.lblTimeRemaining.Text = "25 Minutes Left";
             // 
-            // button1
+            // btnReset
             // 
-            this.button1.BackgroundImage = global::Tomodoro.Properties.Resources.Plus;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(301, 119);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(55, 55);
-            this.button1.TabIndex = 8;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Location = new System.Drawing.Point(181, 134);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(75, 32);
+            this.btnReset.TabIndex = 11;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // btnStop
+            // 
+            this.btnStop.Enabled = false;
+            this.btnStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStop.Location = new System.Drawing.Point(181, 96);
+            this.btnStop.Name = "btnStop";
+            this.btnStop.Size = new System.Drawing.Size(75, 32);
+            this.btnStop.TabIndex = 10;
+            this.btnStop.Text = "Stop";
+            this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
+            // 
+            // btnStart
+            // 
+            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.Location = new System.Drawing.Point(181, 58);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(75, 32);
+            this.btnStart.TabIndex = 9;
+            this.btnStart.Text = "Start";
+            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.BackColor = System.Drawing.SystemColors.Control;
+            this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Location = new System.Drawing.Point(29, 99);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(120, 25);
+            this.lblStatus.TabIndex = 1;
+            this.lblStatus.Text = "WORKING";
+            this.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // clndrBrowser
+            // 
+            this.clndrBrowser.Enabled = false;
+            this.clndrBrowser.Location = new System.Drawing.Point(29, 45);
+            this.clndrBrowser.Name = "clndrBrowser";
+            this.clndrBrowser.TabIndex = 9;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.clndrBrowser);
+            this.groupBox4.Location = new System.Drawing.Point(12, 208);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(284, 252);
+            this.groupBox4.TabIndex = 10;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Browse";
             // 
             // pictureBox1
             // 
@@ -137,177 +265,157 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // btnDeleteTomodori
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(29, 99);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "WORKING";
+            this.btnDeleteTomodori.BackgroundImage = global::Tomodoro.Properties.Resources.Minus;
+            this.btnDeleteTomodori.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDeleteTomodori.Location = new System.Drawing.Point(205, 65);
+            this.btnDeleteTomodori.Name = "btnDeleteTomodori";
+            this.btnDeleteTomodori.Size = new System.Drawing.Size(40, 40);
+            this.btnDeleteTomodori.TabIndex = 16;
+            this.btnDeleteTomodori.UseVisualStyleBackColor = true;
+            this.btnDeleteTomodori.Click += new System.EventHandler(this.btnDeleteTomodori_Click);
             // 
-            // monthCalendar1
+            // btnUpdateTomodori
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(12, 18);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 9;
+            this.btnUpdateTomodori.BackgroundImage = global::Tomodoro.Properties.Resources.Apply;
+            this.btnUpdateTomodori.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnUpdateTomodori.Location = new System.Drawing.Point(205, 206);
+            this.btnUpdateTomodori.Name = "btnUpdateTomodori";
+            this.btnUpdateTomodori.Size = new System.Drawing.Size(40, 40);
+            this.btnUpdateTomodori.TabIndex = 15;
+            this.btnUpdateTomodori.UseVisualStyleBackColor = true;
+            this.btnUpdateTomodori.Click += new System.EventHandler(this.btnUpdateTomodori_Click);
             // 
-            // groupBox4
+            // btnAddTomodori
             // 
-            this.groupBox4.Controls.Add(this.monthCalendar1);
-            this.groupBox4.Location = new System.Drawing.Point(670, 12);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(261, 190);
-            this.groupBox4.TabIndex = 10;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Browse";
+            this.btnAddTomodori.BackgroundImage = global::Tomodoro.Properties.Resources.Plus;
+            this.btnAddTomodori.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAddTomodori.Location = new System.Drawing.Point(205, 19);
+            this.btnAddTomodori.Name = "btnAddTomodori";
+            this.btnAddTomodori.Size = new System.Drawing.Size(40, 40);
+            this.btnAddTomodori.TabIndex = 7;
+            this.btnAddTomodori.UseVisualStyleBackColor = true;
+            this.btnAddTomodori.Click += new System.EventHandler(this.btnAddTomodori_Click);
             // 
-            // textBox1
+            // btnDeleteGoal
             // 
-            this.textBox1.Location = new System.Drawing.Point(35, 137);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(228, 20);
-            this.textBox1.TabIndex = 10;
+            this.btnDeleteGoal.BackgroundImage = global::Tomodoro.Properties.Resources.Minus;
+            this.btnDeleteGoal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDeleteGoal.Location = new System.Drawing.Point(90, 145);
+            this.btnDeleteGoal.Name = "btnDeleteGoal";
+            this.btnDeleteGoal.Size = new System.Drawing.Size(40, 40);
+            this.btnDeleteGoal.TabIndex = 17;
+            this.btnDeleteGoal.UseVisualStyleBackColor = true;
+            this.btnDeleteGoal.Click += new System.EventHandler(this.btnDeleteGoal_Click);
             // 
-            // button5
+            // btnUpdateGoal
             // 
-            this.button5.BackgroundImage = global::Tomodoro.Properties.Resources.Minus;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.Location = new System.Drawing.Point(144, 191);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(55, 55);
-            this.button5.TabIndex = 8;
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnUpdateGoal.BackgroundImage = global::Tomodoro.Properties.Resources.Apply;
+            this.btnUpdateGoal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnUpdateGoal.Location = new System.Drawing.Point(552, 145);
+            this.btnUpdateGoal.Name = "btnUpdateGoal";
+            this.btnUpdateGoal.Size = new System.Drawing.Size(40, 40);
+            this.btnUpdateGoal.TabIndex = 11;
+            this.btnUpdateGoal.UseVisualStyleBackColor = true;
+            this.btnUpdateGoal.Click += new System.EventHandler(this.btnUpdateGoal_Click);
             // 
-            // button2
+            // btnAddGoal
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(181, 58);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 32);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Start";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAddGoal.BackgroundImage = global::Tomodoro.Properties.Resources.Plus;
+            this.btnAddGoal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAddGoal.Location = new System.Drawing.Point(44, 145);
+            this.btnAddGoal.Name = "btnAddGoal";
+            this.btnAddGoal.Size = new System.Drawing.Size(40, 40);
+            this.btnAddGoal.TabIndex = 8;
+            this.btnAddGoal.UseVisualStyleBackColor = true;
+            this.btnAddGoal.Click += new System.EventHandler(this.btnAddGoal_Click);
             // 
-            // button3
+            // btnClearTomodori
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(181, 134);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 32);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Stop";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnClearTomodori.BackgroundImage = global::Tomodoro.Properties.Resources.Clear;
+            this.btnClearTomodori.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnClearTomodori.Location = new System.Drawing.Point(582, 13);
+            this.btnClearTomodori.Name = "btnClearTomodori";
+            this.btnClearTomodori.Size = new System.Drawing.Size(25, 25);
+            this.btnClearTomodori.TabIndex = 17;
+            this.btnClearTomodori.UseVisualStyleBackColor = true;
+            this.btnClearTomodori.Click += new System.EventHandler(this.btnClearTomodori_Click);
             // 
-            // button6
+            // btnClearGoal
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(181, 96);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 32);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "Pause";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnClearGoal.BackgroundImage = global::Tomodoro.Properties.Resources.Clear;
+            this.btnClearGoal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnClearGoal.Location = new System.Drawing.Point(598, 119);
+            this.btnClearGoal.Name = "btnClearGoal";
+            this.btnClearGoal.Size = new System.Drawing.Size(25, 25);
+            this.btnClearGoal.TabIndex = 18;
+            this.btnClearGoal.UseVisualStyleBackColor = true;
+            this.btnClearGoal.Click += new System.EventHandler(this.btnClearGoal_Click);
             // 
-            // label2
+            // notificationIcon
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(58, 19);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(175, 25);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "25 Minutes Left";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(324, 21);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Topic:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(369, 18);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(213, 20);
-            this.textBox2.TabIndex = 10;
-            // 
-            // checkedListBox2
-            // 
-            this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Location = new System.Drawing.Point(6, 19);
-            this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(193, 169);
-            this.checkedListBox2.TabIndex = 11;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(272, 44);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(401, 124);
-            this.textBox3.TabIndex = 13;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(222, 100);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 13);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Notes:";
+            this.notificationIcon.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.notificationIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notificationIcon.Icon")));
+            this.notificationIcon.Text = "Tomodoro";
+            this.notificationIcon.Visible = true;
             // 
             // Tomodoro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(932, 459);
+            this.ClientSize = new System.Drawing.Size(932, 466);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Tomodoro";
             this.Text = "Tomodoro";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Tomodoro_FormClosing);
+            this.Load += new System.EventHandler(this.Tomodoro_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox clbGoals;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnAddTomodori;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtGoal;
+        private System.Windows.Forms.Button btnAddGoal;
+        private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.MonthCalendar clndrBrowser;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label lblTimeRemaining;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnStop;
+        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.TextBox txtNotes;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckedListBox checkedListBox2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.CheckedListBox clbTomodori;
+        private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnUpdateTomodori;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnUpdateGoal;
+        private System.Windows.Forms.Button btnDeleteTomodori;
+        private System.Windows.Forms.Button btnDeleteGoal;
+        private System.Windows.Forms.Button btnClearGoal;
+        private System.Windows.Forms.Button btnClearTomodori;
+        private System.Windows.Forms.NotifyIcon notificationIcon;
     }
 }
 

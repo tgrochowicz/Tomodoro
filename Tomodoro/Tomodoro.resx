@@ -117,4 +117,56 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="notificationIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="notificationIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAExRtARMUbAQTFGkJEhNoDBITaAwTFGkJExRrBBMUbQEAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAExRqCRETYyIXHHZiHSWMkiIrlqYkLZemISiNkhgddmMRE2MiExRqCRMU
+        bgEAAAAAAAAAAAAAAAATFG4BEhNnERgfh3wsO8fqPkvX/0dR1v9LVdb/T1jW/05X1f9FUNT/NEHF6xsi
+        h3sSE2cRExRuAQAAAAAAAAAAExNpDBsknpk3ReX/R1Di/0tS4P9KUt//SVHe/0lR3v9LUt7/TlXf/0tU
+        4f87SOL/HiaemxMTaQwAAAAAExRtAhUahWIrOOf/Mjvi/y423v8qNN3/KTbe/yc13/8oNt//Kjfe/y03
+        3v8zO97/Nz7i/zA75/8WGoZjExRtAhMUaQoXIsbVGyXh/xch3P8SINz/HzLp/w4m5f8MJub/DSfm/w4m
+        5P8QJOH/FCLd/xkj3P8eKOL/GSTJ1xMUaQsRE3QwChjh/wUR2/8DEtv/Ahjh/wAf6P8AJuz/ACru/wAq
+        7v8AJuz/ACDp/wEZ4/8DE93/BhPd/wsb5P8RE3UzDBGLYQAP3P8AD9n/ABbf/xAy8f8EMPL/ADfz/wA+
+        9f8APvX/ADjz/wAt8P8AIer/ABfh/wAS3f8EF+P/DhSOYwsSlXYDFdn/Ahba/wEc5P8DLe7/ADr0/wBJ
+        +P8AVPr/AFT6/wBK7P8AO/T/ACrv/wAd5v8DGd//CSHj/w8YmngOFpZvCiLe/w4o4f8LK+n/CDfu/wFG
+        4/8EW/v/CGn9/wdn8P8PaLD/B0z3/wE08v8HKev/HDrv/xEx6f8RHJpxEheDNSRD6f89Wez/N1fw/y9d
+        3P8MYrT/A2H7/x99/P8rmov/MIjC/xBY9v8JRMX/KFiz/z9d8P8mSe//ExmGOhMUbQEpQsq6d5L2/3aS
+        9/9wlO7/Pq2A/xiGuv8XeNT/Qsd0/zeF2v8ZeJ7/SKB5/3WX6P96lvn/K0bPvxMUbQIAAAAAFht9FE5q
+        2Meswvz/tcr9/6XN4v9406j/U8CJ/2LIif9AtIv/Z8+U/6bK5P+vxv3/VXHbyxYcfhUAAAAAAAAAAAAA
+        AAAVGHUFNEmzZ3Wez+Njn9D/OZO7/zGmmv9fxIn/QbuJ/4Sw2/+BqtHpN06zaxYZdwYAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAA0h1IcTp9sf0edZ448d31eRWGkVFGydow5r2acIpRMLAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA8A+sQeADrEGAAaxBgAGsQQAArEEAAKxBAACsQQAArEEAAKxBAACsQQAArEEAAKxBgAGsQcAD
+        rEHwD6xB//+sQQ==
+</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAExRtARMUbAQTFGkJEhNoDBITaAwTFGkJExRrBBMUbQEAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAExRqCRETYyIXHHZiHSWMkiIrlqYkLZemISiNkhgddmMRE2MiExRqCRMU
+        bgEAAAAAAAAAAAAAAAATFG4BEhNnERgfh3wsO8fqPkvX/0dR1v9LVdb/T1jW/05X1f9FUNT/NEHF6xsi
+        h3sSE2cRExRuAQAAAAAAAAAAExNpDBsknpk3ReX/R1Di/0tS4P9KUt//SVHe/0lR3v9LUt7/TlXf/0tU
+        4f87SOL/HiaemxMTaQwAAAAAExRtAhUahWIrOOf/Mjvi/y423v8qNN3/KTbe/yc13/8oNt//Kjfe/y03
+        3v8zO97/Nz7i/zA75/8WGoZjExRtAhMUaQoXIsbVGyXh/xch3P8SINz/HzLp/w4m5f8MJub/DSfm/w4m
+        5P8QJOH/FCLd/xkj3P8eKOL/GSTJ1xMUaQsRE3QwChjh/wUR2/8DEtv/Ahjh/wAf6P8AJuz/ACru/wAq
+        7v8AJuz/ACDp/wEZ4/8DE93/BhPd/wsb5P8RE3UzDBGLYQAP3P8AD9n/ABbf/xAy8f8EMPL/ADfz/wA+
+        9f8APvX/ADjz/wAt8P8AIer/ABfh/wAS3f8EF+P/DhSOYwsSlXYDFdn/Ahba/wEc5P8DLe7/ADr0/wBJ
+        +P8AVPr/AFT6/wBK7P8AO/T/ACrv/wAd5v8DGd//CSHj/w8YmngOFpZvCiLe/w4o4f8LK+n/CDfu/wFG
+        4/8EW/v/CGn9/wdn8P8PaLD/B0z3/wE08v8HKev/HDrv/xEx6f8RHJpxEheDNSRD6f89Wez/N1fw/y9d
+        3P8MYrT/A2H7/x99/P8rmov/MIjC/xBY9v8JRMX/KFiz/z9d8P8mSe//ExmGOhMUbQEpQsq6d5L2/3aS
+        9/9wlO7/Pq2A/xiGuv8XeNT/Qsd0/zeF2v8ZeJ7/SKB5/3WX6P96lvn/K0bPvxMUbQIAAAAAFht9FE5q
+        2Meswvz/tcr9/6XN4v9406j/U8CJ/2LIif9AtIv/Z8+U/6bK5P+vxv3/VXHbyxYcfhUAAAAAAAAAAAAA
+        AAAVGHUFNEmzZ3Wez+Njn9D/OZO7/zGmmv9fxIn/QbuJ/4Sw2/+BqtHpN06zaxYZdwYAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAA0h1IcTp9sf0edZ448d31eRWGkVFGydow5r2acIpRMLAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA8A+sQeADrEGAAaxBgAGsQQAArEEAAKxBAACsQQAArEEAAKxBAACsQQAArEEAAKxBgAGsQcAD
+        rEHwD6xB//+sQQ==
+</value>
+  </data>
 </root>
