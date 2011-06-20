@@ -158,7 +158,7 @@ namespace Tomodoro
         }
         private Data.TomodoriRepository CurrentRepository;
         private Data.Workday CurrentWorkday;
-        private const string RepositoryPath = "./Temp.xml";
+        private string RepositoryPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/Tomodoro/Tomodoro.xml";
         private void btnAddGoal_Click(object sender, EventArgs e)
         {
             if (txtGoal.Text.Length > 0)
