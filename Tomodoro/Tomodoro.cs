@@ -118,6 +118,8 @@ namespace Tomodoro
         #region Repository
         private void PopulateUI(DateTime date)
         {
+            ClearUI();
+
             CurrentWorkday = CurrentRepository.GetWorkday(date.Date);
             
             //Can't bind to winforms checkedlistbox
@@ -129,6 +131,13 @@ namespace Tomodoro
             {
                 clbTomodori.Items.Add(workitem, workitem.Completed);
             }
+        }
+        private void ClearUI()
+        {
+            clbGoals.Items.Clear();
+            clbTomodori.Items.Clear();
+            ClearGoalText();
+            ClearTomodoriText();
         }
         private void Save()
         {
@@ -267,6 +276,12 @@ namespace Tomodoro
         }
 
         #endregion Repository
+
+        private void clndrBrowser_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            
+            PopulateUI(clndrBrowser.SelectionStart);
+        }
 
     }
 }

@@ -32,37 +32,37 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tomodoro));
             this.clbGoals = new System.Windows.Forms.CheckedListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnClearGoal = new System.Windows.Forms.Button();
+            this.btnDeleteGoal = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnUpdateGoal = new System.Windows.Forms.Button();
             this.txtGoal = new System.Windows.Forms.TextBox();
+            this.btnAddGoal = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnClearTomodori = new System.Windows.Forms.Button();
+            this.btnDeleteTomodori = new System.Windows.Forms.Button();
+            this.btnUpdateTomodori = new System.Windows.Forms.Button();
             this.txtNotes = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.clbTomodori = new System.Windows.Forms.CheckedListBox();
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnAddTomodori = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lblTimeRemaining = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
             this.lblStatus = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.clndrBrowser = new System.Windows.Forms.MonthCalendar();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnDeleteTomodori = new System.Windows.Forms.Button();
-            this.btnUpdateTomodori = new System.Windows.Forms.Button();
-            this.btnAddTomodori = new System.Windows.Forms.Button();
-            this.btnDeleteGoal = new System.Windows.Forms.Button();
-            this.btnUpdateGoal = new System.Windows.Forms.Button();
-            this.btnAddGoal = new System.Windows.Forms.Button();
-            this.btnClearTomodori = new System.Windows.Forms.Button();
-            this.btnClearGoal = new System.Windows.Forms.Button();
             this.notificationIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // clbGoals
@@ -91,6 +91,28 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Today\'s Goals";
             // 
+            // btnClearGoal
+            // 
+            this.btnClearGoal.BackgroundImage = global::Tomodoro.Properties.Resources.Clear;
+            this.btnClearGoal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnClearGoal.Location = new System.Drawing.Point(598, 119);
+            this.btnClearGoal.Name = "btnClearGoal";
+            this.btnClearGoal.Size = new System.Drawing.Size(25, 25);
+            this.btnClearGoal.TabIndex = 18;
+            this.btnClearGoal.UseVisualStyleBackColor = true;
+            this.btnClearGoal.Click += new System.EventHandler(this.btnClearGoal_Click);
+            // 
+            // btnDeleteGoal
+            // 
+            this.btnDeleteGoal.BackgroundImage = global::Tomodoro.Properties.Resources.Minus;
+            this.btnDeleteGoal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDeleteGoal.Location = new System.Drawing.Point(90, 145);
+            this.btnDeleteGoal.Name = "btnDeleteGoal";
+            this.btnDeleteGoal.Size = new System.Drawing.Size(40, 40);
+            this.btnDeleteGoal.TabIndex = 17;
+            this.btnDeleteGoal.UseVisualStyleBackColor = true;
+            this.btnDeleteGoal.Click += new System.EventHandler(this.btnDeleteGoal_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -100,12 +122,34 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Goal:";
             // 
+            // btnUpdateGoal
+            // 
+            this.btnUpdateGoal.BackgroundImage = global::Tomodoro.Properties.Resources.Apply;
+            this.btnUpdateGoal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnUpdateGoal.Location = new System.Drawing.Point(552, 145);
+            this.btnUpdateGoal.Name = "btnUpdateGoal";
+            this.btnUpdateGoal.Size = new System.Drawing.Size(40, 40);
+            this.btnUpdateGoal.TabIndex = 11;
+            this.btnUpdateGoal.UseVisualStyleBackColor = true;
+            this.btnUpdateGoal.Click += new System.EventHandler(this.btnUpdateGoal_Click);
+            // 
             // txtGoal
             // 
             this.txtGoal.Location = new System.Drawing.Point(44, 119);
             this.txtGoal.Name = "txtGoal";
             this.txtGoal.Size = new System.Drawing.Size(548, 20);
             this.txtGoal.TabIndex = 10;
+            // 
+            // btnAddGoal
+            // 
+            this.btnAddGoal.BackgroundImage = global::Tomodoro.Properties.Resources.Plus;
+            this.btnAddGoal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAddGoal.Location = new System.Drawing.Point(44, 145);
+            this.btnAddGoal.Name = "btnAddGoal";
+            this.btnAddGoal.Size = new System.Drawing.Size(40, 40);
+            this.btnAddGoal.TabIndex = 8;
+            this.btnAddGoal.UseVisualStyleBackColor = true;
+            this.btnAddGoal.Click += new System.EventHandler(this.btnAddGoal_Click);
             // 
             // groupBox2
             // 
@@ -124,6 +168,39 @@
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tomodori";
+            // 
+            // btnClearTomodori
+            // 
+            this.btnClearTomodori.BackgroundImage = global::Tomodoro.Properties.Resources.Clear;
+            this.btnClearTomodori.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnClearTomodori.Location = new System.Drawing.Point(582, 13);
+            this.btnClearTomodori.Name = "btnClearTomodori";
+            this.btnClearTomodori.Size = new System.Drawing.Size(25, 25);
+            this.btnClearTomodori.TabIndex = 17;
+            this.btnClearTomodori.UseVisualStyleBackColor = true;
+            this.btnClearTomodori.Click += new System.EventHandler(this.btnClearTomodori_Click);
+            // 
+            // btnDeleteTomodori
+            // 
+            this.btnDeleteTomodori.BackgroundImage = global::Tomodoro.Properties.Resources.Minus;
+            this.btnDeleteTomodori.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDeleteTomodori.Location = new System.Drawing.Point(205, 65);
+            this.btnDeleteTomodori.Name = "btnDeleteTomodori";
+            this.btnDeleteTomodori.Size = new System.Drawing.Size(40, 40);
+            this.btnDeleteTomodori.TabIndex = 16;
+            this.btnDeleteTomodori.UseVisualStyleBackColor = true;
+            this.btnDeleteTomodori.Click += new System.EventHandler(this.btnDeleteTomodori_Click);
+            // 
+            // btnUpdateTomodori
+            // 
+            this.btnUpdateTomodori.BackgroundImage = global::Tomodoro.Properties.Resources.Apply;
+            this.btnUpdateTomodori.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnUpdateTomodori.Location = new System.Drawing.Point(205, 206);
+            this.btnUpdateTomodori.Name = "btnUpdateTomodori";
+            this.btnUpdateTomodori.Size = new System.Drawing.Size(40, 40);
+            this.btnUpdateTomodori.TabIndex = 15;
+            this.btnUpdateTomodori.UseVisualStyleBackColor = true;
+            this.btnUpdateTomodori.Click += new System.EventHandler(this.btnUpdateTomodori_Click);
             // 
             // txtNotes
             // 
@@ -167,6 +244,17 @@
             this.label3.Size = new System.Drawing.Size(37, 13);
             this.label3.TabIndex = 9;
             this.label3.Text = "Topic:";
+            // 
+            // btnAddTomodori
+            // 
+            this.btnAddTomodori.BackgroundImage = global::Tomodoro.Properties.Resources.Plus;
+            this.btnAddTomodori.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAddTomodori.Location = new System.Drawing.Point(205, 19);
+            this.btnAddTomodori.Name = "btnAddTomodori";
+            this.btnAddTomodori.Size = new System.Drawing.Size(40, 40);
+            this.btnAddTomodori.TabIndex = 7;
+            this.btnAddTomodori.UseVisualStyleBackColor = true;
+            this.btnAddTomodori.Click += new System.EventHandler(this.btnAddTomodori_Click);
             // 
             // groupBox3
             // 
@@ -238,23 +326,6 @@
             this.lblStatus.Text = "WORKING";
             this.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // clndrBrowser
-            // 
-            this.clndrBrowser.Enabled = false;
-            this.clndrBrowser.Location = new System.Drawing.Point(29, 45);
-            this.clndrBrowser.Name = "clndrBrowser";
-            this.clndrBrowser.TabIndex = 9;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.clndrBrowser);
-            this.groupBox4.Location = new System.Drawing.Point(12, 208);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(284, 252);
-            this.groupBox4.TabIndex = 10;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Browse";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Tomodoro.Properties.Resources.Tomato;
@@ -265,93 +336,22 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnDeleteTomodori
+            // clndrBrowser
             // 
-            this.btnDeleteTomodori.BackgroundImage = global::Tomodoro.Properties.Resources.Minus;
-            this.btnDeleteTomodori.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDeleteTomodori.Location = new System.Drawing.Point(205, 65);
-            this.btnDeleteTomodori.Name = "btnDeleteTomodori";
-            this.btnDeleteTomodori.Size = new System.Drawing.Size(40, 40);
-            this.btnDeleteTomodori.TabIndex = 16;
-            this.btnDeleteTomodori.UseVisualStyleBackColor = true;
-            this.btnDeleteTomodori.Click += new System.EventHandler(this.btnDeleteTomodori_Click);
+            this.clndrBrowser.Location = new System.Drawing.Point(29, 45);
+            this.clndrBrowser.Name = "clndrBrowser";
+            this.clndrBrowser.TabIndex = 9;
+            this.clndrBrowser.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.clndrBrowser_DateChanged);
             // 
-            // btnUpdateTomodori
+            // groupBox4
             // 
-            this.btnUpdateTomodori.BackgroundImage = global::Tomodoro.Properties.Resources.Apply;
-            this.btnUpdateTomodori.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnUpdateTomodori.Location = new System.Drawing.Point(205, 206);
-            this.btnUpdateTomodori.Name = "btnUpdateTomodori";
-            this.btnUpdateTomodori.Size = new System.Drawing.Size(40, 40);
-            this.btnUpdateTomodori.TabIndex = 15;
-            this.btnUpdateTomodori.UseVisualStyleBackColor = true;
-            this.btnUpdateTomodori.Click += new System.EventHandler(this.btnUpdateTomodori_Click);
-            // 
-            // btnAddTomodori
-            // 
-            this.btnAddTomodori.BackgroundImage = global::Tomodoro.Properties.Resources.Plus;
-            this.btnAddTomodori.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAddTomodori.Location = new System.Drawing.Point(205, 19);
-            this.btnAddTomodori.Name = "btnAddTomodori";
-            this.btnAddTomodori.Size = new System.Drawing.Size(40, 40);
-            this.btnAddTomodori.TabIndex = 7;
-            this.btnAddTomodori.UseVisualStyleBackColor = true;
-            this.btnAddTomodori.Click += new System.EventHandler(this.btnAddTomodori_Click);
-            // 
-            // btnDeleteGoal
-            // 
-            this.btnDeleteGoal.BackgroundImage = global::Tomodoro.Properties.Resources.Minus;
-            this.btnDeleteGoal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDeleteGoal.Location = new System.Drawing.Point(90, 145);
-            this.btnDeleteGoal.Name = "btnDeleteGoal";
-            this.btnDeleteGoal.Size = new System.Drawing.Size(40, 40);
-            this.btnDeleteGoal.TabIndex = 17;
-            this.btnDeleteGoal.UseVisualStyleBackColor = true;
-            this.btnDeleteGoal.Click += new System.EventHandler(this.btnDeleteGoal_Click);
-            // 
-            // btnUpdateGoal
-            // 
-            this.btnUpdateGoal.BackgroundImage = global::Tomodoro.Properties.Resources.Apply;
-            this.btnUpdateGoal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnUpdateGoal.Location = new System.Drawing.Point(552, 145);
-            this.btnUpdateGoal.Name = "btnUpdateGoal";
-            this.btnUpdateGoal.Size = new System.Drawing.Size(40, 40);
-            this.btnUpdateGoal.TabIndex = 11;
-            this.btnUpdateGoal.UseVisualStyleBackColor = true;
-            this.btnUpdateGoal.Click += new System.EventHandler(this.btnUpdateGoal_Click);
-            // 
-            // btnAddGoal
-            // 
-            this.btnAddGoal.BackgroundImage = global::Tomodoro.Properties.Resources.Plus;
-            this.btnAddGoal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAddGoal.Location = new System.Drawing.Point(44, 145);
-            this.btnAddGoal.Name = "btnAddGoal";
-            this.btnAddGoal.Size = new System.Drawing.Size(40, 40);
-            this.btnAddGoal.TabIndex = 8;
-            this.btnAddGoal.UseVisualStyleBackColor = true;
-            this.btnAddGoal.Click += new System.EventHandler(this.btnAddGoal_Click);
-            // 
-            // btnClearTomodori
-            // 
-            this.btnClearTomodori.BackgroundImage = global::Tomodoro.Properties.Resources.Clear;
-            this.btnClearTomodori.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnClearTomodori.Location = new System.Drawing.Point(582, 13);
-            this.btnClearTomodori.Name = "btnClearTomodori";
-            this.btnClearTomodori.Size = new System.Drawing.Size(25, 25);
-            this.btnClearTomodori.TabIndex = 17;
-            this.btnClearTomodori.UseVisualStyleBackColor = true;
-            this.btnClearTomodori.Click += new System.EventHandler(this.btnClearTomodori_Click);
-            // 
-            // btnClearGoal
-            // 
-            this.btnClearGoal.BackgroundImage = global::Tomodoro.Properties.Resources.Clear;
-            this.btnClearGoal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnClearGoal.Location = new System.Drawing.Point(598, 119);
-            this.btnClearGoal.Name = "btnClearGoal";
-            this.btnClearGoal.Size = new System.Drawing.Size(25, 25);
-            this.btnClearGoal.TabIndex = 18;
-            this.btnClearGoal.UseVisualStyleBackColor = true;
-            this.btnClearGoal.Click += new System.EventHandler(this.btnClearGoal_Click);
+            this.groupBox4.Controls.Add(this.clndrBrowser);
+            this.groupBox4.Location = new System.Drawing.Point(12, 208);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(284, 252);
+            this.groupBox4.TabIndex = 10;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Browse";
             // 
             // notificationIcon
             // 
@@ -380,8 +380,8 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
