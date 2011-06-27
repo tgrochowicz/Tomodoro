@@ -279,8 +279,11 @@ namespace Tomodoro
 
         private void clndrBrowser_DateChanged(object sender, DateRangeEventArgs e)
         {
-            
-            PopulateUI(clndrBrowser.SelectionStart);
+            if (e.Start.Date != CurrentWorkday.Date)
+            {
+                Save();
+                PopulateUI(clndrBrowser.SelectionStart);
+            }
         }
 
     }
